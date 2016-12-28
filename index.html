@@ -1,4 +1,11 @@
 <html>
+<header>
+<style type="text/css">
+body {
+ margin: 0px 0px 0px 0px;
+ }
+</style>
+</header>
 <body>
 <div id="ytplayer"></div>
 
@@ -21,8 +28,8 @@
   var player;
   function onYouTubePlayerAPIReady() {
     player = new YT.Player('ytplayer', {
-      height: '360',
-      width: '640',
+      height: '768',
+      width: '1024',
       videoId: getParameterByName("videoid"),
       Referer: 'https://www.youtube.com/watch',
       modestbranding: 1,
