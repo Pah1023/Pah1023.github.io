@@ -3,6 +3,17 @@
 <div id="ytplayer"></div>
 
 <script>
+  function getParameterByName(name, url) {
+    if (!url) {
+      url = window.location.href;
+    }
+    name = name.replace(/[\[\]]/g, "\\$&");
+    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, " "));
+  }
   var tag = document.createElement('script');
   tag.src = "https://www.youtube.com/player_api";
   var firstScriptTag = document.getElementsByTagName('script')[0];
@@ -12,7 +23,7 @@
     player = new YT.Player('ytplayer', {
       height: '360',
       width: '640',
-      videoId: 'YU4hhNKsPog',
+      videoId: getParameterByName("videoid"),
       Referer: 'https://www.youtube.com/watch',
       modestbranding: 1,
       rel: 0,
