@@ -31,10 +31,13 @@ body {
       height: '768',
       width: '1024',
       videoId: getParameterByName("videoid"),
+      start: parseInt(getParameterByName("start")),
       Referer: 'https://www.youtube.com/watch',
       modestbranding: 1,
       rel: 0,
-      
+      fs: 0,
+      controls: 0,
+      autoplay: 1
       events: {
         'onReady': onPlayerReady
       }
