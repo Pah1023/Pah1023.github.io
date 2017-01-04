@@ -31,7 +31,7 @@ body {
       height: '768',
       width: '1024',
       videoId: getParameterByName("videoid"),
-      start: parseInt(getParameterByName("start")),
+      start: getParameterByName("start"),
       Referer: 'https://www.youtube.com/watch',
       modestbranding: 1,
       rel: 0,
@@ -42,6 +42,7 @@ body {
         'onReady': onPlayerReady
       }
     });
+    console.log(parseInt(getParameterByName("start")));
   }
   function onPlayerReady(event) {
     event.target.playVideo();
