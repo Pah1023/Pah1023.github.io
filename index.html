@@ -31,7 +31,7 @@ body {
       height: '768',
       width: '1024',
       videoId: getParameterByName("videoid"),
-      start: getParameterByName("start"),
+      playerVars: {'start': parseInt(getParameterByName("start"))},
       Referer: 'https://www.youtube.com/watch',
       modestbranding: 1,
       rel: 0,
