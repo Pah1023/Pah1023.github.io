@@ -28,8 +28,8 @@ body {
   var player;
   function onYouTubePlayerAPIReady() {
     player = new YT.Player('ytplayer', {
-      height: '768',
-      width: '1024',
+      height: parseInt(getParameterByName("height")) >= 768 ? parseInt(getParameterByName("height")):768,
+      width: parseInt(getParameterByName("width")) >= 1024 ? parseInt(getParameterByName("width")):1024,
       videoId: getParameterByName("videoid"),
       playerVars: {'start': parseInt(getParameterByName("start"))},
       Referer: 'https://www.youtube.com/watch',
