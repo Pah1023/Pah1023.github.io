@@ -30,6 +30,7 @@ body {
     player = new YT.Player('ytplayer', {
       height: parseInt(getParameterByName("height")) >= 768 ? parseInt(getParameterByName("height")):768,
       width: parseInt(getParameterByName("width")) >= 1024 ? parseInt(getParameterByName("width")):1024,
+      loop: parseInt(getParameterByName("l")) >= 1 ? 1:0,
       videoId: getParameterByName("videoid"),
       playerVars: {'start': parseInt(getParameterByName("start"))},
       Referer: 'https://www.youtube.com/watch',
