@@ -32,6 +32,7 @@ body {
       width: parseInt(getParameterByName("width")) >= 1024 ? parseInt(getParameterByName("width")):1024,
       loop: parseInt(getParameterByName("l")) >= 1 ? 1:0,
       videoId: getParameterByName("videoid"),
+      playlist: getParameterByName("pl"),
       playerVars: {'start': parseInt(getParameterByName("start"))},
       Referer: 'https://www.youtube.com/watch',
       modestbranding: 1,
