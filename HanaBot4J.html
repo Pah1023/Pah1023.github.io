@@ -1,0 +1,190 @@
+
+
+
+<!DOCTYPE html>
+<html>
+    <title>Hana Bot</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="css.css">
+
+    <style>
+        body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+        body {font-size:16px;}
+        .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+        .w3-half img:hover{opacity:1}
+    </style>
+    <body>
+
+        <!-- Sidebar/menu -->
+        <nav class="w3-sidebar w3-light-green w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+            <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+            <div class="w3-container">
+                <h3 class="w3-padding-64"><b>Hana<br>Discord Bot</b></h3>
+            </div>
+            <div class="w3-bar-block w3-white">
+                <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Top</a> 
+                <a href="#features" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Features</a> 
+                <a href="#get" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Get Hana</a> 
+                <a href="#terms" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Terms and Conditions</a>
+            </div>
+        </nav>
+
+        <!-- Top menu on small screens -->
+        <header class="w3-container w3-top w3-hide-large w3-light-green w3-xlarge w3-padding">
+            <a href="javascript:void(0)" class="w3-button w3-light-green w3-margin-right" onclick="w3_open()">☰</a>
+            <span>Hana</span>
+        </header>
+
+        <!-- Overlay effect when opening sidebar on small screens -->
+        <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+        <!-- !PAGE CONTENT! -->
+        <div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+            <!-- Header -->
+            <div class="w3-container" style="margin-top:80px" id="showcase">
+                <h1 class="w3-jumbo"><b>Hana</b></h1>
+                <h1 class="w3-xxxlarge w3-text-light-green"><b>A bot for all</b></h1>
+                <hr style="width:50px;border:5px solid #8bc34a" class="w3-round">
+            </div>
+
+            <!-- Photo grid (modal) -->
+            <div class="w3-row-padding">
+                <div class="w3-half">
+                    A
+                </div>
+
+                <div class="w3-half">
+                    B
+                </div>
+            </div>
+
+            <!-- 
+            <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display = 'none'">
+                <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+                <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+                    <img id="img01" class="w3-image">
+                    <p id="caption"></p>
+                </div>
+            </div>
+            Modal for full size images on click-->
+            <!-- Features -->
+            <div class="w3-container" id="features" style="margin-top:75px">
+                <h1 class="w3-xxxlarge w3-text-light-green"><b>Features</b></h1>
+                <hr style="width:50px;border:5px solid #8bc34a" class="w3-round">
+                <p>A wide selection of features for both gaming and every day use.</p>
+                <table style="display: table-header-group; " class="w3-border-green">
+                    <thead>
+                        <tr>
+                            <th class="tdcmd">Command</th>
+                            <th class="tddesc">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="tdcmd">Test</td>
+                            <td class="tddesc">Some long but still short description.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="w3-container" id="get" style="margin-top:75px">
+                <h1 class="w3-xxxlarge w3-text-light-green"><b>Get Hana for your server</b></h1>
+                <hr style="width:50px;border:5px solid #8bc34a" class="w3-round">
+                <p>By clicking Get Bot or using the bot you agree to the <a href="#terms">terms and conditions.</a></p>
+                <button type="submit" class="w3-button w3-block w3-padding-large w3-light-green w3-margin-bottom">Get Bot</button>
+            </div>
+
+            <div class="w3-container" id="terms" style="margin-top:75px">
+                <h1 class="w3-xxxlarge w3-text-light-green"><b>Terms and Conditions</b></h1>
+                <hr style="width:50px;border:5px solid #8bc34a" class="w3-round">
+                <h2 class="w3-xlarge"><b>1. Terms</b></h2>
+                <p>
+                    By using this bot, you are agreeing to the Terms and Conditions of Use, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws.
+                    If you do not agree with any of these terms, you are prohibited from using this bot.
+                </p>
+                <h2 class="w3-xlarge"><b>2. Use License</b></h2>
+                <ol type="a">
+                    <li>Permission is granted to use the bot on your server.
+                        This is the grant of a license, not a transfer of title, and under this license you may not:
+                        <ol type="1">
+                            <li>Use the bot for any commercial purpose.</li>
+                        </ol>
+                    </li>
+                    <li>
+                        This license shall automatically terminate if you violate any of these restrictions and may be terminated by Pah1023 at any time.
+                        Upon termination of this license you must remove the bot from your server.
+                    </li>
+                </ol>
+                <h2 class="w3-xlarge"><b>3. Disclaimer</b></h2>
+                <ol type="a">
+                    <li>
+                        The materials provided by the bot are provided "as is".
+                        Pah1023 makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties, including without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.
+                        Further, Pah1023 does not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials provided by its bot or otherwise relating to such materials or on any sites provided by this bot.
+                    </li>
+                </ol>
+                <h2 class="w3-xlarge"><b>4. Limitations</b></h2>
+                <p>
+                    In no event shall Pah1023 be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption,) arising out of the use or inability to use the materials provided by the bot, even if Pah1023 has been notified orally or in writing of the possibility of such damage.
+                    Because some jurisdictions do not allow limitations on implied warranties, or limitations of liability for consequential or incidental damages, these limitations may not apply to you.
+                </p>
+                <h2 class="w3-xlarge"><b>5. Revisions and Errata</b></h2>
+                <p>
+                    The materials appearing from the bot could include technical, typographical, or photographic errors.
+                    Pah1023 does not warrant that any of the materials provided by the bot are accurate, complete, or current.
+                    Pah1023 may make changes to the materials contained or provided by its bot at any time without notice.
+                    Pah1023 does not, however, make any commitment to the update of its material or the bot.
+
+                </p>
+
+                <h2 class="w3-xlarge"><b>6. Links</b></h2>
+                <p>
+                    Pah1023 has not reviewed all of the sites linked to its bot and is not responsible for the contents of such linked site.
+                    The inclusion of any link does not imply endorsement by Pah1023 of the site.
+                    Use of any such linked web site is at the user's own risk.
+                </p>
+                <h2 class="w3-xlarge"><b>7. Bot Terms of Use Modifications</b></h2>
+                <p>
+                    Pah1023 may revise these terms of use for its bot at any time without notice.
+                    By using the bot you are agreeing to be bound by the then current version of these Terms and Conditions of use.
+                </p>
+                <h2 class="w3-xlarge"><b>8. Governing Law</b></h2>
+                <p>
+                    Any claim relating to Pah1023's bot shall by governed by the laws of the State of South Carolina without regard to its conflict of law provisions.
+                </p>
+
+            </div>
+
+            <!-- End page content -->
+        </div>
+
+        <!-- W3.CSS Container -->
+        <div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+        <script>
+            // Script to open and close sidebar
+            function w3_open() {
+                document.getElementById("mySidebar").style.display = "block";
+                document.getElementById("myOverlay").style.display = "block";
+            }
+
+            function w3_close() {
+                document.getElementById("mySidebar").style.display = "none";
+                document.getElementById("myOverlay").style.display = "none";
+            }
+
+            // Modal Image Gallery
+            function onClick(element) {
+                document.getElementById("img01").src = element.src;
+                document.getElementById("modal01").style.display = "block";
+                var captionText = document.getElementById("caption");
+                captionText.innerHTML = element.alt;
+            }
+        </script>
+
+    </body>
+</html>
