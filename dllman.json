@@ -1,0 +1,50 @@
+{
+    "dLatestVersion":1.0,
+    "lModules":[
+        {
+            "sName":"Awesomium BL-Browser",
+            "lAuthors":[
+                {
+                    "sText":"Pah1023",
+                    "sUrl":"https://forum.blockland.us/index.php?action=profile;u=11156"
+                }
+            ],
+            "lDesc":[
+                ""
+            ],
+            "lRequired":[
+                {
+                    "sType":"library exe",
+                    "sName":"Microsoft Visual C++ Runtime Redistributable 2013 (x86)",
+                    "sDll":"msvcr120.dll",
+                    "sUrl":"https://download.microsoft.com/download/2/E/6/2E61CFA4-993B-4DD4-91DA-3737CD5CD6E3/vcredist_x86.exe"
+                },
+                {
+                    "sType":"library exe",
+                    "sName":"Microsoft Visual C++ Runtime Redistributable 2015 (x86)",
+                    "sDll":"vcruntime.dll",
+                    "sUrl":"https://download.microsoft.com/download/9/3/F/93FCF1E7-E6A4-478B-96E7-D4B285925B00/vc_redist.x86.exe"
+                }
+            ],
+            "sLink":"https://github.com/Pah1023/BL-Browser/releases/download/v0.2.1/AwsHook.dll",
+            "dVers":0.21
+        },
+        {
+            "sName":"Blockland Lua",
+            "lAuthors":[
+                {
+                    "sText":"portify",
+                    "sUrl":"https://forum.blockland.us/index.php?action=profile;u=136812"
+                }
+            ],
+            "lDesc":[
+                "Exposes LuaJIT to Torquescript."
+            ],
+            "lRequired":[
+
+            ],
+            "sLink":"https://github.com/qoh/BlocklandLua/releases/download/v0.3.0/BlocklandLua.dll",
+            "dVers":0.30
+        }
+    ]
+}
