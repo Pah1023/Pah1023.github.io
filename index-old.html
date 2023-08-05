@@ -44,6 +44,8 @@ body {
         'onReady': onPlayerReady
       }
     });
+   player.setAttribute("allow", "autoplay; fullscren");
+   
     console.log(parseInt(getParameterByName("start")));
   }
   function onPlayerReady(event) {
