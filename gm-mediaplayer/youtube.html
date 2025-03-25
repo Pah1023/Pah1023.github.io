@@ -30,7 +30,7 @@
         var MEDIAPLAYER_START_SEC = parseInt(url.searchParams.get('start'), 10)
 
         var script = document.createElement('script');
-        script.src = "https://www.youtube.com/iframe_api";
+        script.src = "https://www.youtube.com/iframe_api?cc_load_policy=3";
         
         var firstScriptTag = document.getElementsByTagName('script')[0]
         firstScriptTag.parentNode.insertBefore(script, firstScriptTag)
